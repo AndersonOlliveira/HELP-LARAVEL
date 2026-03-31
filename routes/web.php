@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 /*  ROTA PADADRAO DO LARAVEL**/
 // Route::get('/', function () {
@@ -11,3 +12,8 @@ Route::get('/', function () {
     return view('auth.logon')->with('login', 'Faça login para acessar o sistema');
     // return view('auth.logon')->name('login');
 })->name('login');
+
+
+Route::post('/logon', [AuthController::class, 'show'])->name('executar-login');
+
+
