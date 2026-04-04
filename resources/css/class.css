@@ -1,11 +1,1 @@
-@import 'tailwindcss';
-
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
-
-@utility btns {
-
-    @apply px-10 py-2 bg-blue-900 text-white rounded;
-
-}
+/* @import 'bootstrap/scss/bootstrap'; */
